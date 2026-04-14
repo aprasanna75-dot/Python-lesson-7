@@ -1,24 +1,14 @@
-a = 10
-b = 12
-c = 0
+#Take Input for ths students that he can attend the exam or not
+medical_cause = input("Did you have a medical cause? (Y/N): ").strip().upper()
 
-if a and b and c:
-    print("All the numbers have boolean value as True")
+#Checking the usre input and predicting output accordingly
+if medical_cause =='Y':   #Condition 1
+    print("You are allowed")
 else:
-    print("Atleast one number has boolean value as False")
+    # Take input of the attendence
+    atten = int(input("Enter the attendence of the students: "))
 
-
-
-a = 10
-b = -10
-c = 0
-
-if a > 0 or b > 0:
-     print("Either of the number is greater than 0")
-else:
-    print("No number is greater than 0")
-
-if b > 0 or c > 0:
-     print("Either of the number is greater than 0")
-else:
-    print("No number is greater than 0")
+    if atten >= 75:       #Condition 2
+        print("Allowed")
+    else:
+        print("Not Allowed")
